@@ -10,35 +10,35 @@ while 1:
     f.read(1)
     #rock
     if(char=='A'):
-        #rock
+        #lose
         if(c2=='X'):
-            p += 1 + 3
-        #paper
-        if(c2=='Y'):
-            p += 2 + 6
-        #scissors
-        if(c2=='Z'):
             p += 3 + 0
+        #draw
+        if(c2=='Y'):
+            p += 1 + 3
+        #win
+        if(c2=='Z'):
+            p += 2 + 6
     #paper
     if(char=='B'):
-        #rock
+        #lose
         if (c2 == 'X'):
             p += 1 + 0
-        #paper
+        #draw
         if (c2 == 'Y'):
             p += 2 + 3
-        #scissors
+        #win
         if (c2 == 'Z'):
             p += 3 + 6
     #scissors
     if (char == 'C'):
-        # rock
+        #lose
         if (c2 == 'X'):
-            p += 1 + 6
-        # paper
-        if (c2 == 'Y'):
             p += 2 + 0
-        # scissors
-        if (c2 == 'Z'):
+        #draw
+        if (c2 == 'Y'):
             p += 3 + 3
+        #win
+        if (c2 == 'Z'):
+            p += 1 + 6
 print(p)
